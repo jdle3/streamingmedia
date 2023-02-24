@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MuzakMaker- Smooth Jazz</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,6 +14,7 @@
     <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
 </header>
 <nav>
+    <h2>Navigation</h2>
     <ul>
         <li>MuzakMaker</li>
         <li>Trending Songs</li>
@@ -22,12 +24,17 @@
     </ul>
 </nav>
 <main>
-    <section>
+    <section id="trending">
         <h2>Trending Songs</h2>
-
+        <div class="scroll">
             <section>
+                <div>
                 <h3>Aloma</h3>
-                <p>Artist Cali</p>
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Cali</dd>
+                    </dl>
+                </div>    
                 <img src="images/aloma-cover.png" alt="picture of a white bird flying">
                 <audio controls>
                     <source src="audio/aloma.mp3" type="audio/mpeg">
@@ -35,8 +42,13 @@
             </section>
 
             <section>
+                <div>
                 <h3>My Road</h3>
-                <p>Artist Nesterouk</p>
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Nesterouk</dd>
+                    </dl>
+                </div>
                 <img src="images/my-road-cover.png" alt="picture of a road">
                 <audio controls>
                     <source src="audio/my-road.mp3" type="audio/mpeg">
@@ -44,17 +56,27 @@
             </section>
 
             <section>
+                <div>
                 <h3>Papaya</h3>
-                <p>Artist Dredstudio</p>
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Dredstudio</dd>
+                    </dl>
+                </div>
                 <img src="images/papaya-cover.png" alt="a papaya cut in half showing the insides">
                 <audio controls>
                     <source src="audio/papaya.mp3" type="audio/mpeg">
-                </audio>>
+                </audio>
             </section>
 
             <section>
+                <div>
                 <h3>Smoothies</h3>
-                <p>Artist Black Rhomb</p>
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Black Rhomb</dd>
+                    </dl>
+                </div>
                 <img src="images/smoothies-cover.png" alt="bananas, strawberries, pineapple, oranges, rasperries, and a smoothie">
                 <audio controls>
                     <source src="audio/smoothies.mp3" type="audio/mpeg">
@@ -62,18 +84,23 @@
             </section>
 
             <section>
+                <div>
                 <h3>Successful Performance</h3>
-                <p>Artist Ricky Bombino</p>
+                    <dl>
+                        <dt>Artist</dt>
+                        <dd>Ricky Bombino</dd>
+                    </dl>
+                </div>
                 <img src="images/successful-performance-cover.png" alt="guy in a red shirt who is happy">
                 <audio controls>
                     <source src="audio/successful-performance.mp3" type="audio/mpeg">
                 </audio>
             </section>
 
-        <p>More trending</p>
+        <button type="button">More trending</button>
     </section>
 
-    <section>
+    <section id="yourPlaylists">
         <h2>Your Playlists</h2>
 
             <section>
@@ -107,10 +134,10 @@
             </section>
 
 
-        <p>All your playlists</p>
+        <button type="button">All your playlists</button>
     </section>
         
-    <section>
+    <section id="curPlaylists">
         <h2>Curated Playlists</h2>
 
             <section>
@@ -143,7 +170,7 @@
                 <p>The greatest collection of your sax favorites.</p>
             </section>
 
-        <p>More curated</p>
+        <button type="button">More curated</button>
     </section>
 </main>
 <footer>
