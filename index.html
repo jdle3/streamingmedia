@@ -14,19 +14,20 @@
     <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
 </header>
 <nav>
-    <h2>Navigation</h2>
-    <ul>
-        <li>MuzakMaker</li>
-        <li>Trending Songs</li>
-        <li>Your playlists</li>
-        <li>Curated Playlists</li>
-        <li><img src="images/duke-silver.png" alt="duke silver playing the saxophone"></li>
-    </ul>
+    <h2>Main Navigation</h2>
+    <input type="checkbox" id="dropdown">
+    <label for="dropdown"><span></span></label>
+        <ul>
+                <li><a href="trending">Trending Songs</a></li>
+                <li><a href="#playlists">Your playlists</a></li>
+                <li><a href="#curated">Curated Playlists</a></li>
+                <li><a href="user"><img src="images/duke-silver.png" alt="duke silver playing the saxophone"></a></li>
+        </ul>
 </nav>
 <main>
     <section id="trending">
         <h2>Trending Songs</h2>
-        <div class="scroll">
+        <div class="artistscroll">
             <section>
                 <div>
                 <h3>Aloma</h3>
@@ -96,9 +97,11 @@
                     <source src="audio/successful-performance.mp3" type="audio/mpeg">
                 </audio>
             </section>
+        </div>
 
         <button type="button">More trending</button>
     </section>
+ 
 
     <section id="yourPlaylists">
         <h2>Your Playlists</h2>
