@@ -55,7 +55,6 @@ body{
     background-color: #ffffff;
     display:grid;
 }
-
 header {
     grid-row:2/3;
       background: rgb(33,4,217);
@@ -168,3 +167,21 @@ header {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: #ffffff;
   }
+ 
+@media screen and (min-width:834px){
+    body {
+        width:834px;
+    }
+    label span, input{
+        display:none;
+    }
+    ul{ 
+        width:834px;
+        overflow:visible;
+        height:auto;
+        position:absolute;
+        top:0;
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    }
+}
