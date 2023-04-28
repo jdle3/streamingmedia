@@ -10,29 +10,32 @@
 </head>
 
 <body>
-    <!-- HEADER -->
+
+    <section class="head">
     <header>
         <h1>Smooth Jazz</h1>
         <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
     </header>
 
-<!-- NAVIGATION -->
+
         <nav>
             <h2>Main Navigation</h2>
             <input type="checkbox" id="dropdown">
-            <label for="dropdown"><span></span></label>
+            <label class="dropdown">
+                <span class="drop"></span>
+            </label>
                 <ul>
-                    <li><a href="#home">MuzakMaker</a></li>
-                        <li><a href="trending">Trending Songs</a></li>
-                        <li><a href="#playlists">Your playlists</a></li>
-                        <li><a href="#curated">Curated Playlists</a></li>
-                        <li><a href="user"><img src="images/duke-silver.png" alt="duke silver playing the saxophone"></a></li>
+                    <li><a href="#home" class="logo">MuzakMaker</a></li>
+                    <li><a href="trending">Trending Songs</a></li>
+                    <li><a href="#playlists">Your playlists</a></li>
+                    <li><a href="#curated">Curated Playlists</a></li>
+                    <li><a href="user"><img src="images/duke-silver.png" alt="duke silver playing the saxophone"></a></li>
                 </ul>
         </nav>
-
+    </section>
 
     <main>
-        <!-- TRENDING -->
+
         <section id="trending">
             <h2>Trending Songs</h2>
             <div class="scroll">
@@ -118,10 +121,10 @@
             </div>
         </section>
 
-    <button type="button">More trending</button>
+    <p class="more">More trending</p>
     
  
-        <!-- YOUR PLAYLISTS -->
+
         <section id="playlists">
             <h2>Your Playlists</h2>
             <div class="playlists">
@@ -168,9 +171,10 @@
             </div>
         </section>
 
-        <button type="button">All your playlists</button>
+        <p class="more">All your playlists</p>
 
-        <!-- CURATED PLAYLISTS -->
+    <section class="bottom">
+
         <section id="curated">
             <h2>Curated Playlists</h2>
             <div class="curated">
@@ -216,8 +220,9 @@
                 </section>
             </div>
         </section>
+    </section>
 
-        <button type="button">More curated</button>
+        <p class="more">More curated</p>
     </main>
 <footer>
     Copyright 2022 Smooth Jazz
