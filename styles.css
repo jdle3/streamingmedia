@@ -107,8 +107,9 @@ footer p {
     height: 350px;
     width: 350px;
     padding-left: 10px;
-    display: inline-flexbox
-}dl {
+    display: inline-flex;
+}
+dl {
     width: 100%;
     overflow: hidden;
     padding: 0;
@@ -459,7 +460,7 @@ footer p {
     height: 350px;
     width: 350px;
     padding-left: 10px;
-    display: inline-flexbox;
+    display: inline-flex;
 }
 dl {
     width: 100%;
@@ -536,5 +537,5 @@ audio::-webkit-media-controls-enclosure {
     border-radius: 5px;
 }
 #playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
-    background: #fff;
+    background: #fffff;
 }
