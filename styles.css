@@ -49,12 +49,17 @@ table {
 
 /* START OF CSS */
 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 html {
     background-color: #020659;
 }
 body {
-    width: 375px;
+    max-width: 834px;;
+    min-width: 375px;
     margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #ffffff;
     display: grid;
 }
@@ -64,17 +69,29 @@ header {
     background: linear-gradient(90deg, rgba(33,4,217,1) 0%, rgba(2,6,89,1) 33%, rgba(2,6,89,1) 66%, rgba(0,0,0,1) 100%);
     padding:10px;
 }
+h1{ 
+    font-size: 1.25em;
+}
+h2 {
+    color: #590242;
+}
 h1, h2, h3 {
     font-weight: bold;
     text-transform: uppercase;
 }
 h2, h3 {
-    font-size: 20px;
+    font-size: 1em;
     color: #590242;
     line-height: 2em;
 }
 header p, h1, h2 {
     padding: 0 32px 0 32px;
+}
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: 0.75em;
 }
 dl {
     color: #590242;
@@ -83,7 +100,7 @@ dl {
 dt {
     font-style: italic;
     color: #590242;
-    padding-right: 5px;
+
 }
 dd {
     color: #590242;
@@ -122,6 +139,13 @@ button {
     text-align: center;
     margin: 10px 0 30px 32px;
 }
+button:hover {
+    cursor: pointer;
+    background-color: #020659;
+}
+a:hover {
+    background-color: #020659;
+}
 .playlists {
     display: inline-flex;
     grid-template-rows: repeat(5, 1fr);
@@ -129,15 +153,62 @@ button {
     overflow-y: hidden;
     background-color: #2104D9;
 }
+.playlists h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+.playlists p {
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+}
+.playlists {
+    padding: 10px;
+    background-color: #2699fb;
+}
 .playlists section {
+    margin: 10px;
     position: relative;
 }
+.playlists div {
+    padding: 5px;
+    background-color: #0d8dfb;
+    height: auto;
+}
 .curated {
-    display: inline-flex;
-    grid-template-rows: repeat(5, 1fr);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: #020659;
+}
+.curated h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+.curated p {
+    color: #ffffff;
+    text-align: center;
+    margin-left: auto;
+}
+.curated {
+    margin: 10px;
+    background-color: #030A8C;
+}
+.curated section {
+    margin: 10px;
+    position: relative;
+}
+.curated div {
+    padding: 5px;
+    background-color: #020873;
+    height: auto;
+}
+#curated h2 {
+    margin-left: 10px;
 }
 header p {
     color: #ffffff;
